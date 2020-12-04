@@ -6,12 +6,13 @@ window.addEventListener('load', function () {
     const form = document.getElementById('order-form').elements;
 
     if (isFormValid(form)) {
-      const cover = document.getElementById('cover')
-      cover.classList.add('hidden')
-      const popUp = document.getElementById('pop-up')
-      popUp.classList.add('hidden')
       const orderForm = document.getElementById('order-form')
       orderForm.classList.add('hidden')
+      const popUp = document.getElementById('pop-up')
+      popUp.classList.add('hidden')
+      const cover = document.getElementById('cover')
+      cover.classList.add('hidden')
+
 
       // nosūtīt uz epastu ar html tagiem vai vēlāk ar php
 

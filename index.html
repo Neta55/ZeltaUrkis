@@ -34,7 +34,7 @@
     <div class="headerr"></div>
     <!-- slaidu sadaļa -->
     <div class="hero">
-      <div class="heroSlides width-50">
+      <div class="heroSlides">
         <div class="image-cont">
           <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
           <img src="/ZeltaUrkis/css/img/hero/izvelk.gif" alt="1">
@@ -44,7 +44,7 @@
         <p>Tā norādīs, vai tev jautās par kādu spēles dalībnieku, kādu paziņu, mīlestību vai aktualitāti tavā dzīvē. Ja
           paveiksies, visi izteiks tev komplimentus, ja ne – gaidi dzēlību jūru.</p>
       </div>
-      <div class="heroSlides width-50">
+      <div class="heroSlides">
         <div class="image-cont">
           <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
           <img src="/ZeltaUrkis/css/img/hero/griez.gif" alt="2">
@@ -53,7 +53,7 @@
         <h3>2. Griez bultu un uzzini jautājuma uzdevēju!</h3>
         <p>Šis cilvēks tev uzdos jautājumu par attiecīgo tematu.</p>
       </div>
-      <div class="heroSlides width-50">
+      <div class="heroSlides">
         <div class="image-cont">
           <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
           <img src="/ZeltaUrkis/css/img/hero/target.gif" alt="3">
@@ -64,7 +64,7 @@
           partneriem un pirmo skūpstu, sarežģīto mātes vai nesavtīgo kaķa mīlestību, vai jebko citu. Viss ir tavās
           rokās!</p>
       </div>
-      <div class="heroSlides width-50">
+      <div class="heroSlides">
         <div class="image-cont">
           <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
           <img src="/ZeltaUrkis/css/img/hero/jauta.gif" alt="4">
@@ -74,7 +74,7 @@
         <p>Šī ir tava iespēja uzzināt to, kas tevi patiesi interesē. Izvēlies to īsto no visiem jautājumiem, un klausies
           uzmanīgi!</p>
       </div>
-      <div class="heroSlides width-50">
+      <div class="heroSlides">
         <div class="image-cont">
           <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
           <img src="/ZeltaUrkis/css/img/hero/atbild.gif" alt="5">
@@ -173,10 +173,11 @@
     <div class="video">
       <div class="videowrapper">
         <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_Styw422oEM">
-          <!-- &cc_load_policy=1&cc_lang_pref=lv&cc_load_policy=1 -->
+
         </iframe>
       </div>
-      <button class="spikeris">ŠPIKERIS</button>
+      <a href="index.html" type="button" class="spikeris-btn">ŠPIKERIS</a>
+
     </div>
     <!-- nosaukums + pasūtīšanas poga -->
     <div class="buyl"></div>
@@ -190,7 +191,7 @@
     <div class="footerl"></div>
     <div class="footerr"></div>
     <div class="footer">
-
+      <h2>Ar mums var sazināties:</h2>
     </div>
 
 
@@ -200,8 +201,8 @@
   <!-- FORMAS VIETA -->
   <div id="cover" class="hidden">
     <div id="pop-up" class="hidden">
-      <form method="POST" id="order-form" class="hidden" action="mailto:ineta.priga@gmail.com" enctype="text/plain"
-        novalidate>
+      <form method="POST" id="order-form" class="hidden" action="mailto:ineta.priga@gmail.com"
+        enctype="multipart/form-data" novalidate>
         <div type="button" class="close-btn" onclick="closeForm()">&#10006</div>
         <h2>Pasūtīt Zelta Urķi </h2>
         <p>Lai pasūtītu, aizpildiet formu</p>
@@ -215,7 +216,7 @@
         </label>
         <div class="error-msg email" name="error-msg email"></div>
         <label>
-          Tālrunis: <input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}">
+          Tālrunis: <input type="tel" name="phone">
         </label>
         <div class="error-msg phone" name="error-msg phone"></div>
 

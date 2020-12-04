@@ -50,23 +50,36 @@ body {
     grid-template-columns: 1fr 640px 1fr;
   }
 
-}
-/*
-@media only screen and (min-device-width:481px)  { 
-  .wrapper {
-    grid-template-columns: 1fr 480px 1fr;
+  .hero {
+    padding: 0;
   }
-
 
 }
 
-@media only screen and (min-device-width:320px)  {  
+@media only screen and (min-device-width:481px) and (max-device-width:641px)  { 
+  .wrapper {
+    grid-template-columns: 1fr 99fr 1fr;
+  }
+  .hero {
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:481px)  {  
 
   .wrapper {
-    grid-template-columns: 1fr 320px 1fr;
+    grid-template-columns: 1fr 99fr 1fr;
   }
 
-} */
+} 
+
+@media only screen and (max-device-width:320px) {  
+
+  .wrapper {
+    grid-template-columns: 1fr 99fr 1fr;
+  }
+
+} 
 
 
 
@@ -141,6 +154,7 @@ button, a, button:hover, a:hover, a:visited, button:active {
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1px;
 }
+
 button {
   color: #ffffff;
   padding: 15px 20px;
@@ -172,7 +186,7 @@ button:active {
 
 .hero {
   grid-area: hero;
- position: relative;
+  padding: 0 20%;
   display: flex;
   flex-direction: column;
   background-color: #000;
@@ -196,20 +210,24 @@ button:active {
   width: 100%;
 }
 .hero button {
-  background-color: #e3d499;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   font-size: 1.5rem;
-  line-height: 0;
   font-weight: 100;
   padding: 0;
+  background-color: #e3d499;
   color: #ab8d3f;
-
 }
+.hero button:hover {
+  background-color: #e3d499;
+  color: #705b25;
+}
+
 
 .display-left {
   position: absolute;
+  display: inline-block;
   top: 50%;
   left: -55px;
   transform: translate(0%,-50%);
@@ -315,7 +333,7 @@ grid-template-areas:
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 500;
-  border-radius: 30px;
+  border-radius: 40px;
   transition:  0.3s;
 }
 .poga button:hover {
@@ -345,7 +363,7 @@ grid-template-areas:
   background-color: #e3d499;
   padding: 30px 0 10px;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
   grid-template-areas:
   "trapigi atklati vienkarsi"
 }
@@ -450,7 +468,7 @@ padding: 50px;
 }
 .galery2 {
   grid-area: galery2;
-  background: url("img/galery/2.JPeG") no-repeat center;
+  background: url("img/galery/2.JPG") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
@@ -475,6 +493,8 @@ padding: 50px;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
+  border: 5px double #fff;
+  
 }
 .responsive-iframe {
   position: absolute;
@@ -488,15 +508,26 @@ padding: 50px;
 
 .spikeris-btn {
   margin: 20px auto;
-  width: 150px;
+  width: 200px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 30px;
   background-color: #000;
   color: #e3d499;
+  transition:  0.3s;
 }
 .spikeris-btn:hover {
   margin: 20px auto;
+  width: 200px;
+  padding: 15px 20px;
   color: #ffffff; 
   background-color: #000;
   font-weight: 700;
+}
+.spikeris-btn:active {
+  transform: scale(0.9);
 }
 
 .buyl {
@@ -519,6 +550,10 @@ padding: 50px;
   padding-bottom: 0;
   margin-bottom: 0;
 }
+.buy p {
+
+  margin: 0 0 30px;
+}
 
 .footerl {
   grid-area: footerl;
@@ -531,6 +566,8 @@ padding: 50px;
 .footer {
   grid-area: footer;
   background-color: #000;
+  color: #e3d499;
+
 }
 
 #cover {
