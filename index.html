@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Zelta Urķis</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="css/img/logo/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="css/img/logo/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="css/img/logo/favicon/favicon-16x16.png">
+  <link rel="manifest" href="css/img/logo/favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- logo sadaļa -->
+    <header class="header">
+      <div class="logo"><img src="/Zelta-Urkis/css/img/logo/Zelta_urkis_weblapa.png" alt="Zelta Urķis"></div>
+      <div class="language"></div>
+      <p class="slogan">Iespēja būt patiesi atklātam!</p>
+      <div class="language">
+        <a href="/Zelta-Urkis/source/../index.html">RU</a>
+        <a href="/Zelta-Urkis/source/../index.html">EN</a>
+      </div>
+    </header>
+    <div class="headerl"></div>
+    <div class="headerr"></div>
+    <!-- slaidu sadaļa -->
+    <div class="hero">
+      <div class="heroSlides width-50">
+        <div class="image-cont">
+          <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
+          <img src="/Zelta-Urkis/css/img/hero/izvelk.gif" alt="1">
+          <button class="display-right" onclick="switchSlide(+1)">&#10095;</button>
+        </div>
+        <h3>1. Izvelc kārti!</h3>
+        <p>Tā norādīs, vai tev jautās par kādu spēles dalībnieku, kādu paziņu, mīlestību vai aktualitāti tavā dzīvē. Ja
+          paveiksies, visi izteiks tev komplimentus, ja ne – gaidi dzēlību jūru.</p>
+      </div>
+      <div class="heroSlides width-50">
+        <div class="image-cont">
+          <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
+          <img src="/Zelta-Urkis/css/img/hero/griez.gif" alt="2">
+          <button class="display-right" onclick="switchSlide(+1)">&#10095;</button>
+        </div>
+        <h3>2. Griez bultu un uzzini jautājuma uzdevēju!</h3>
+        <p>Šis cilvēks tev uzdos jautājumu par attiecīgo tematu.</p>
+      </div>
+      <div class="heroSlides width-50">
+        <div class="image-cont">
+          <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
+          <img src="/Zelta-Urkis/css/img/hero/target.gif" alt="3">
+          <button class="display-right" onclick="switchSlide(+1)">&#10095;</button>
+        </div>
+        <h3>3. Noformulē jautājumu!</h3>
+        <p>Jebkura kārts tev dod iespēju izdomāt dažnedažādākos. Piemēram, par mīlestību vari jautāt par bijušajiem
+          partneriem un pirmo skūpstu, sarežģīto mātes vai nesavtīgo kaķa mīlestību, vai jebko citu. Viss ir tavās
+          rokās!</p>
+      </div>
+      <div class="heroSlides width-50">
+        <div class="image-cont">
+          <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
+          <img src="/Zelta-Urkis/css/img/hero/jauta.gif" alt="4">
+          <button class="display-right" onclick="switchSlide(+1)">&#10095;</button>
+        </div>
+        <h3>4. Pajautā!</h3>
+        <p>Šī ir tava iespēja uzzināt to, kas tevi patiesi interesē. Izvēlies to īsto no visiem jautājumiem, un klausies
+          uzmanīgi!</p>
+      </div>
+      <div class="heroSlides width-50">
+        <div class="image-cont">
+          <button class="display-left" onclick="switchSlide(-1)">&#10094;</button>
+          <img src="/Zelta-Urkis/css/img/hero/atbild.gif" alt="5">
+          <button class="display-right" onclick="switchSlide(+1)">&#10095;</button>
+        </div>
+        <h3>5. Sniedz atbildi!</h3>
+        <p>Jo godīgāk atbildēsi, jo lielāka iespēja, ka pretī arī saņemsi patiesu atbildi uz savu jautājumu ;)</p>
+      </div>
+
+    </div>
+    <div class="herol"></div>
+    <div class="heror"></div>
+
+    <!-- špikera strīpa -->
+    <div class="cheat">
+      <a href="">MEKLĒ ŠPIKERI LAPAS APAKŠĀ</a>
+
+    </div>
+    <div class="cheatl"></div>
+    <div class="cheatr"></div>
+    <!-- cena poga apraksts -->
+    <div class="descrl"></div>
+    <div class="descrr"></div>
+    <div class="descr">
+      <div class="cena">
+        11,99 € <span>14,99 €<span>
+      </div>
+      <div class="bilde">
+        <div class="kartis"><img src="css/img/logo/3.jpg" width="250"></div>
+      </div>
+      <div class="poga"><button onclick="openForm()">rezervēt</button></div>
+      <div class="apraksts">Zelta Urķis - sociāla jautājumu spēle, ko var spēlēt gan ģimenes, gan draugu lokā. Nebaidies
+        jautāt to, kas pašam interesē, un esi gatavs uzzināt, ko citi tiešām domā par tevi. Šī ir tava iespēja beidzot
+        būt patiesi atklātam un IZURĶĒT citu noslēpumus!</div>
+    </div>
+    <!-- TŖĀPĪGI ATKLĀTI VIENKĀRŠI -->
+    <div class="featuresl"></div>
+    <div class="featuresr"></div>
+    <div class="features">
+      <div class="trapigi">
+        <img src="css/img/ikonas/trapigi.svg" alt="trapigi" srcset="">
+        <h2>TRĀPĪGI</h2>
+        <p>Jautā to, kas tev interesē! Tevi vairs neierobežos iepriekš sastādīti jautājumi, no kuriem tev ne silts, ne
+          auksts</p>
+      </div>
+      <div class="atklati">
+        <img src="css/img/ikonas/atklati.svg" alt="trapigi" srcset="">
+        <h2>ATKLĀTI</h2>
+        <p>Uzzini to, par ko ikdienā parasti nerunā</p>
+      </div>
+      <div class="vienkarsi">
+        <img src="css/img/ikonas/vienkarsi.svg" alt="VIENKARSI" srcset="">
+        <h2>VIENKĀRŠI</h2>
+        <p>Nekādas ilgas uzstādīšanas un instrukcijas atkodēšanas. Sāc vakaru nekavējoties!</p>
+      </div>
+    </div>
+    <!-- stāsti -->
+    <div class="stories">
+      <div class="story-title">
+        <h1>Izurķētie stāsti</h1>
+      </div>
+      <div class="story-1-img"></div>
+      <div class="story-1-txt">
+        <h4>Dita, iedzerot izpļāpājas</h4>
+        <p>Spēlējot "Zelta Urķi", Dita atzinās, ka, ja būtu pasaule, kur iespējams nogalināt vienu cilvēku bez sekām,
+          tas būtu viņas bijušais puisis. Kā arī piebilda, ka aiztaupītu viņa dzīvību, ja kāds samaksātu viņai 4200
+          eiro.</br>
+          Neviens viņai šādu jautājumu nebija uzdevis.</p>
+      </div>
+      <div class="story-2-img"></div>
+      <div class="story-2-txt">
+        <h4>Gatis, upuris</h4>
+        <p>“Izrādās, ka ļoti daudzas “labākās” un “apjomīgākās” Ziemassvētku dāvanas bērnībā mums dāvināja nevis vecāki,
+          bet gan vecvecāki. Vecākiem vienkārši patika piesavināties slavu un pateicību no bērniem.”</p>
+      </div>
+      <div class="story-3-img"></div>
+      <div class="story-3-txt">
+        <h4>Ilze, ģimenes cilvēks</h4>
+        <p>Pēc 13 gadu ilgas kopdzīves ar saviem bērniem un vīru, Ilze tikai vakar atklāja, ka ģimene, ko viņa ir
+          mīlējusi un lolojusi ikdienā, vienojošies zvērīgā kliķē, kura visus šos gadus ir Ilzi maldinājusi, liekot
+          viņai domāt, ka viņas gatavotās zupas ir gardas. Tā nav.</p>
+      </div>
+    </div>
+    <!-- bilžu galerija -->
+
+    <div class="galeryl"></div>
+    <div class="galeryr"></div>
+    <div class="galery">
+      <div class="galery1"></div>
+      <div class="galery2"></div>
+      <div class="galery3"></div>
+    </div>
+    <!-- video + špikera poga -->
+    <div class="videol"></div>
+    <div class="videor"></div>
+    <div class="video">
+      <div class="videowrapper">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_Styw422oEM">
+          <!-- &cc_load_policy=1&cc_lang_pref=lv&cc_load_policy=1 -->
+        </iframe>
+      </div>
+      <button class="spikeris">ŠPIKERIS</button>
+    </div>
+    <!-- nosaukums + pasūtīšanas poga -->
+    <div class="buyl"></div>
+    <div class="buyr"></div>
+    <div class="buy">
+      <h2>Zelta Urķis</h2>
+      <p>Iespēja būt atklātam</p>
+      <button onclick="openForm()">REZERVĒT TŪLĪT</button>
+    </div>
+    <!-- fūteris ar kontaktiem -->
+    <div class="footerl"></div>
+    <div class="footerr"></div>
+    <div class="footer">
+
+    </div>
+
+
+
+  </div>
+
+  <!-- FORMAS VIETA -->
+  <div id="cover" class="hidden">
+    <div id="pop-up" class="hidden">
+      <form method="POST" id="order-form" class="hidden" action="mailto:ineta.priga@gmail.com" enctype="text/plain"
+        novalidate>
+        <div type="button" class="close-btn" onclick="closeForm()">&#10006</div>
+        <h2>Pasūtīt Zelta Urķi </h2>
+        <p>Lai pasūtītu, aizpildiet formu</p>
+
+        <label>
+          Vārds: <input name="name">
+        </label>
+        <div class="error-msg name" name="error-msg name"></div>
+        <label>
+          E-pasts: <input type="email" name="email">
+        </label>
+        <div class="error-msg email" name="error-msg email"></div>
+        <label>
+          Tālrunis: <input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}">
+        </label>
+        <div class="error-msg phone" name="error-msg phone"></div>
+
+
+        <button type="submit" id="order-game-btn">NOSŪTĪT</button>
+
+    </div>
+    </form>
+  </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/form-lv.js"></script>
+</body>
+
+</html>
