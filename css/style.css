@@ -326,6 +326,7 @@ grid-template-areas:
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas: 
   "story-title story-title"
   "story-1-img story-1-txt"
@@ -373,20 +374,23 @@ grid-template-areas:
 .story-1-img {
   grid-area: story-1-img;
   background: url("img/stasti/alise_nazis.jpg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
   min-height: 300px;
+  width: 100%;
 }
 .story-2-img {
   grid-area: story-2-img;
   background: url("img/stasti/patriks_davana.jpg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
   min-height: 300px;
+
 }
 .story-3-img {
   grid-area: story-3-img;
   background: url("img/stasti/Kristine_katls.jpg") no-repeat center;
-  background-size: contain;
+  background-size: cover;
   min-height: 300px;
+  
 }
 
 .galeryl {
@@ -818,8 +822,9 @@ text-align: left;
     "story-3-img"
     "story-3-txt";
     padding-bottom: 40px;
-    
   }
+  .story-1-img, .story-2-img, .story-3-img {min-height: 150px;}
+  
   .language {
     flex-direction: column;
   }
