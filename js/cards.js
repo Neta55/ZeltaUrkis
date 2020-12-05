@@ -1,4 +1,9 @@
-const card = document.querySelector('.card');
-card.addEventListener('click', function () {
-  card.classList.toggle('is-flipped');
-});
+'use strict';
+
+const cards = document.getElementsByClassName('card');
+
+for (let card of cards) {
+  card.addEventListener('click', function () {
+    this.classList.toggle('is-flipped');
+  });
+}
