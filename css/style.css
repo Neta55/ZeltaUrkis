@@ -373,19 +373,19 @@ grid-template-areas:
 .story-1-img {
   grid-area: story-1-img;
   background: url("img/stasti/alise_nazis.jpg") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   min-height: 300px;
 }
 .story-2-img {
   grid-area: story-2-img;
   background: url("img/stasti/patriks_davana.jpg") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   min-height: 300px;
 }
 .story-3-img {
   grid-area: story-3-img;
   background: url("img/stasti/Kristine_katls.jpg") no-repeat center;
-  background-size: cover;
+  background-size: contain;
   min-height: 300px;
 }
 
