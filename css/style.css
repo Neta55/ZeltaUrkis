@@ -647,7 +647,7 @@ text-align: left;
 }
 
 
-@media only screen  and (max-device-width:641px)  {  
+@media only screen  and (min-device-width:321px) and (max-device-width:640px)  {  
 
   .wrapper {
     grid-template-columns: 5vw 90vw 5vw;
@@ -705,6 +705,79 @@ text-align: left;
     gap: 20px;
     grid-template-columns: 100%;
     grid-template-rows: auto minmax(300px, auto) auto minmax(300px, auto) auto minmax(300px, auto) auto ;
+    grid-template-areas: 
+    "story-title"
+    "story-1-img"
+    "story-1-txt"
+    "story-2-img"
+    "story-2-txt"
+    "story-3-img"
+    "story-3-txt";
+    padding-bottom: 40px;
+    
+  }
+
+
+} 
+
+@media only screen  and (min-device-width:320px)  {  
+
+  .wrapper {
+    grid-template-columns: 3vw 94vw 3vw;
+  }
+  .hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .display-left {
+    left: 0px;
+  }
+  .display-right {
+    right: 0px;
+  }
+
+  .descr {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 100%;
+    justify-items: center;
+  grid-template-areas:  
+    "cena"
+    "bilde"
+    "poga"
+    "apraksts"
+    ;
+  }
+
+  .bilde {
+    grid-area: bilde;
+    display:  flex;
+    margin: 0 auto
+  }
+
+  .galery {
+    grid-template-columns: 100%;
+    gap: 20px;
+    grid-template-areas: 
+    "galery1" "galery2" "galery3";
+  padding: 20px;
+  }
+  .features {
+    padding: 20px 10%;
+    grid-template-columns: 100%;
+    gap: 20px;
+    grid-template-areas:
+    "trapigi"
+    "atklati"
+    "vienkarsi"
+  }
+
+  .stories {
+    padding: 20px;
+    gap: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto minmax(250px, auto) auto minmax(250px, auto) auto minmax(250px, auto) auto ;
     grid-template-areas: 
     "story-title"
     "story-1-img"
