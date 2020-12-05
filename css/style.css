@@ -108,7 +108,7 @@ button {
   padding: 15px 20px;
   background-color: #ab8d3f;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   border-radius: 30px;
   transition:  0.3s;
@@ -166,6 +166,7 @@ button:active {
   padding: 0;
   background-color: #e3d499;
   color: #ab8d3f;
+  opacity: 0.7;
 }
 .hero button:hover {
   background-color: #e3d499;
@@ -255,7 +256,7 @@ grid-template-areas:
 
 }
 
-.cena span{
+.cena span {
   color: #bbb;
   text-decoration: line-through;
   text-decoration-color: red;
@@ -292,7 +293,7 @@ grid-template-areas:
 
 .apraksts {
   grid-area: apraksts;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.5rem;
   margin: 10px auto;
   max-width: 900px;
@@ -330,6 +331,7 @@ grid-template-areas:
   "story-1-img story-1-txt"
   "story-2-txt story-2-img"
   "story-3-img story-3-txt";
+  align-items: center;
   padding-bottom: 40px;
   
 }
@@ -338,9 +340,9 @@ grid-template-areas:
   grid-area: story-title;
 }
 .story-title h1 {
-  font-weight: 200;
+  font-weight: 300;
   color: #ab8d3f;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   margin: 30px 0 10px;
 }
@@ -353,8 +355,8 @@ grid-template-areas:
 
 }
 .stories p {
-  font-weight: 200;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   text-align: left;
 }
 
@@ -372,19 +374,19 @@ grid-template-areas:
   grid-area: story-1-img;
   background: url("img/stasti/alise_nazis.jpg") no-repeat center;
   background-size: cover;
-  min-height: 200px;
+  min-height: 300px;
 }
 .story-2-img {
   grid-area: story-2-img;
   background: url("img/stasti/patriks_davana.jpg") no-repeat center;
   background-size: cover;
-  min-height: 200px;
+  min-height: 300px;
 }
 .story-3-img {
   grid-area: story-3-img;
   background: url("img/stasti/Kristine_katls.jpg") no-repeat center;
   background-size: cover;
-  min-height: 200px;
+  min-height: 300px;
 }
 
 .galeryl {
@@ -431,7 +433,7 @@ padding: 50px;
   grid-area: video;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0;
   align-items: center;
 
 
@@ -441,7 +443,7 @@ padding: 50px;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  border: 5px double #fff;
+  border: 5px double #ab8d3f;
   
 }
 .responsive-iframe {
@@ -490,7 +492,7 @@ padding: 50px;
 .buy {
   grid-area: buy;
   background-color: #e3d499;
-  padding: 10px 0 30px;
+  padding: 10px 0 50px;
 }
 .buy h2 {
   font-size: 3rem;
@@ -515,7 +517,32 @@ padding: 50px;
   grid-area: footer;
   background-color: #000;
   color: #e3d499;
+  padding-bottom: 30px;
+}
+.fb-icon {
+  background: url("img/ikonas/facebk.svg") no-repeat center;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
+.fb-icon:hover {
+  background: url("img/ikonas/facebk-h.svg") no-repeat center;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
 
+.inst-icon {
+  background: url("img/ikonas/instgr.svg") no-repeat center;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
+.inst-icon:hover {
+  background: url("img/ikonas/instgr-h.svg") no-repeat center;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
 }
 
 #cover {
@@ -532,7 +559,7 @@ padding: 50px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 250px;
+  min-width: 300px;
   height: auto;
 width: auto;
 }
@@ -547,6 +574,7 @@ width: auto;
 
 #order-form {
   max-width: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -573,6 +601,9 @@ text-align: left;
 
 
 #order-form input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding: 0 5px;
   outline: none;
@@ -630,7 +661,7 @@ text-align: left;
 
 @media only screen and (min-device-width:641px) and (max-device-width:960px) { 
   .wrapper {
-    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-columns: 3vw 94vw 3vw;
   }
 
   .hero {
@@ -650,7 +681,7 @@ text-align: left;
 @media only screen  and (min-device-width:321px) and (max-device-width:640px)  {  
 
   .wrapper {
-    grid-template-columns: 5vw 90vw 5vw;
+    grid-template-columns: 3vw 94vw 3vw;
   }
   .hero {
     padding-left: 0;
