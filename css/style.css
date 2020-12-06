@@ -428,7 +428,7 @@ padding: 50px;
 }
 .galery3 {
   grid-area: galery3;
-  background: url("/ZeltaUrkis/css/img/galery/3.JPG") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/3.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
