@@ -6,24 +6,21 @@ window.addEventListener('load', function () {
     const form = document.getElementById('order-form').elements;
 
     if (isFormValid(form)) {
-      const orderForm = document.getElementById('order-form')
-      orderForm.classList.add('hidden')
-      const popUp = document.getElementById('pop-up')
-      popUp.classList.add('hidden')
-      const cover = document.getElementById('cover')
-      cover.classList.add('hidden')
+      form.submit();
+      const mailSend = document.getElementById('mailsend');
+      mailSend.innerHTML = "Tavs pieprasījums ir veiksmīgi aizsūtīts. Mēs ar tevi sazināsimies tuvākajā laikā!";
+      form.reset();
 
-
-      // nosūtīt uz epastu ar html tagiem vai vēlāk ar php
 
     } else {
-      console.log('Forma ir nepareizi aizpildīta')
+      console.log('nepareizi ievadīti dati');
+      const mailSend = document.getElementById('mailsend');
+      mailSend.innerHTML = "Ups! Kaut kas nav tā ar tiem sakariem. Lai pasūtītu Urķi, piezvani pa tālr. 26 008 102!";
+
     }
   })
 
   function isFormValid(form) {
-    const orderForm = document.getElementById('order-form');
-
     let isFormValid = true;
 
     const errorMsgBlocks = document.getElementsByClassName('error-msg');
@@ -51,7 +48,7 @@ window.addEventListener('load', function () {
     const phone = form.namedItem('phone').value;
     if (phone.length < 8) {
       const errorMsg = document.getElementsByClassName('error-msg phone')[0];
-      errorMsg.innerHTML = "Lūdzu ievadiet tālruņa numuru!"
+      errorMsg.innerHTML = "Tālruņa numurs nav ievadīts vai ievadīts nepareizi!"
       isFormValid = false;
     }
 
@@ -61,21 +58,4 @@ window.addEventListener('load', function () {
   }
 })
 
-function closeForm() {
-  const cover = document.getElementById('cover');
-  cover.classList.add('hidden');
-  const popUp = document.getElementById('pop-up');
-  popUp.classList.add('hidden');
-  const orderForm = document.getElementById('order-form');
-  orderForm.reset();
-  orderForm.classList.add('hidden')
-}
 
-function openForm() {
-  const cover = document.getElementById('cover');
-  cover.classList.remove('hidden');
-  const popUp = document.getElementById('pop-up');
-  popUp.classList.remove('hidden');
-  const orderForm = document.getElementById('order-form');
-  orderForm.classList.remove('hidden');
-}

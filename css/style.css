@@ -11,6 +11,53 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
+a, a:visited, a:active {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -o-appearance: none !important;
+  appearance: none !important;
+}
+
+
+button, a, button:hover, a:hover, a:visited, button:active {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -o-appearance: none !important;
+  appearance: none !important;
+  cursor: pointer;
+  box-shadow: none;
+  border:none;
+  outline: none;
+  background-color: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
+}
+
+button, .button {
+  color: #ffffff;
+  padding: 15px 20px;
+  background-color: #ab8d3f;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 30px;
+  transition:  0.3s;
+}
+button:hover, .button:hover {
+  padding: 15px 20px;
+  color: #e3d499;
+  background-color: #705b25;
+}
+button:active, .button:active {
+  transform: scale(0.9);
+}
+/* ============================ GALVENAIS WRAPERIS =============================== */
+
 .wrapper {
   display: grid;
   margin: 0;
@@ -30,6 +77,7 @@ body {
 
 }
 
+/* ============================ galvene ar logo un valodām =============================== */
 
 header {
   width: 100%;
@@ -78,50 +126,6 @@ header {
  
 }
 
-a, a:visited, a:active {
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  -o-appearance: none !important;
-  appearance: none !important;
-}
-
-
-button, a, button:hover, a:hover, a:visited, button:active {
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  -o-appearance: none !important;
-  appearance: none !important;
-  cursor: pointer;
-  box-shadow: none;
-  border:none;
-  outline: none;
-  background-color: none;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 1px;
-}
-
-button {
-  color: #ffffff;
-  padding: 15px 20px;
-  background-color: #ab8d3f;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border-radius: 30px;
-  transition:  0.3s;
-}
-button:hover {
-  padding: 15px 20px;
-  color: #e3d499;
-  background-color: #705b25;
-}
-button:active {
-  transform: scale(0.9);
-}
-
 
 .language>a, .language>a:active, .language>a:visited {
   padding: 10px;
@@ -131,7 +135,7 @@ button:active {
 .language>a:active {
   font-weight: 800;
 }
-
+/* ============================ hero - gifu sadaļa  ================================ */
 .hero {
   grid-area: hero;
   padding: 0 20%;
@@ -205,7 +209,7 @@ button:active {
 .hero p {
   margin-top: 5px;
 }
-
+/* ============================ špikera līnija ================================ */
 .cheat {
   grid-area: cheat;
   background-color: #ab8d3f;
@@ -225,6 +229,7 @@ button:active {
   grid-area: cheatr;
   background-color: #ab8d3f;
 }
+/* ============================ cena, poga un apraksts ================================ */
 .descr {
   grid-area: descr;
   padding: 30px 0 20px;
@@ -275,7 +280,7 @@ grid-template-areas:
   display:  flex;
   align-items: center;
 }
-.poga button {
+.poga .button {
   color: #ffffff;
   padding: 20px 25px;
   background-color: #ab8d3f;
@@ -285,7 +290,7 @@ grid-template-areas:
   border-radius: 40px;
   transition:  0.3s;
 }
-.poga button:hover {
+.poga .button:hover {
   padding: 20px 25px;
   color: #e3d499;
   background-color: #705b25;
@@ -298,6 +303,7 @@ grid-template-areas:
   margin: 10px auto;
   max-width: 900px;
 }
+/* ============================ trāpīgi atklāti vienkārši ================================ */
 .featuresl {
   grid-area: featuresl;
   background-color: #e3d499;
@@ -320,7 +326,7 @@ grid-template-areas:
 .features p {
   font-size: 1.2rem;
 }
-
+/* ============================= stāsti =============================== */
 .stories {
   grid-area: stories;
   display: grid;
@@ -392,7 +398,7 @@ grid-template-areas:
   min-height: 300px;
   
 }
-
+/* =========================== galerija melnā ================================= */
 .galeryl {
   background-color: #000;
   grid-area: galeryl;
@@ -432,7 +438,7 @@ padding: 50px;
   background-size: cover;
   min-height: 200px;
 }
-
+/* =========================== video un špikera poga ================================= */
 .video {
   grid-area: video;
   display: flex;
@@ -483,7 +489,7 @@ padding: 50px;
 .spikeris-btn:active {
   transform: scale(0.9);
 }
-
+/* ============================ atkārtots piedāvājums pirkt ================================ */
 .buyl {
   grid-area: buyl;
   background-color: #e3d499;
@@ -508,7 +514,7 @@ padding: 50px;
 
   margin: 0 0 30px;
 }
-
+/* =========================== fūteris ================================= */
 .footerl {
   grid-area: footerl;
   background-color: #000;
@@ -522,6 +528,10 @@ padding: 50px;
   background-color: #000;
   color: #e3d499;
   padding-bottom: 30px;
+}
+.footer h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 .fb-icon {
   background: url("/ZeltaUrkis/css/img/ikonas/facebk.svg") no-repeat center;
@@ -548,7 +558,7 @@ padding: 50px;
   width: 30px;
   margin: 0 5px;
 }
-
+/* ========================== popup logam, nav izmantots ================================== */
 #cover {
   position: fixed;
   top: 0;
@@ -571,79 +581,7 @@ width: auto;
   display: none;
 }
 
-.input-wraper {
-  width: 100%;
-
-}
-
-#order-form {
-  max-width: 500px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  background-color: #e3d499;
-  padding: 20px;
-}
-
-#order-form label {
-text-align: left;
-}
-
-#order-form h2 {
-  font-weight: 400;
-  font-size: 2rem;
-  margin: 0;
-  }
-
-
-
-.inline {
-  display: inline-block;
-}
-
-
-
-#order-form input {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0 5px;
-  outline: none;
-  border: none;
-  font-size: 1.2rem;
-  font-family: 'Source Sans Pro', sans-serif;
-
-}
-
-#order-form input:hover {
-  border: 1px solid #000;
-}
-
-#order-form .error-msg {
-  height: 12px;
-  font-size: 10px;
-  color: red;
-}
-
-#order-form .close-btn {
-  color: #ab8d3f;
-  cursor: pointer;
-  align-self: flex-end;
-  font-size: 2rem;
-  margin: -20px -10px 0 0;
-}
-#order-form .close-btn:hover {
-  color: #705b25;
-}
-
-#order-game-btn {
-  max-width: 150px;
-  align-self: center;
-  margin-top: 10px;
-}
-
+/* ============================ response ================================ */
 
 @media only screen and (min-device-width:1025px)  {  
   .wrapper {
@@ -749,10 +687,7 @@ text-align: left;
     "story-3-img"
     "story-3-txt";
     padding-bottom: 40px;
-    
   }
-
-
 } 
 
 @media only screen  and (max-device-width:320px)  {  
@@ -807,7 +742,6 @@ text-align: left;
     "atklati"
     "vienkarsi"
   }
-
   .stories {
     padding: 20px;
     gap: 20px;
@@ -842,18 +776,21 @@ text-align: left;
 .w250 {
   width: 250px;
 }
-/* ------------------- špikeris------------------- */
+
+/* ============================ špikeris un forma kopējais ================================ */
+
 
 #back-btn {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  top: 10px;
-  width: 100px;
+  top:5px;
   margin: 0 auto;
+  padding: 5px;
   background-color: #000;
   border: #e3d499 solid 1px;
   color: #e3d499;
+  z-index: 10;
   }
 
 #ch-sheet h1 {
@@ -875,8 +812,7 @@ text-align: left;
   flex-wrap: wrap;
 
 }
-
-/* apgriežamās kārtis */
+/* =============================== apgriežamās kārtis ============================= */
 
 .scene {
   width: 179px;
@@ -932,4 +868,75 @@ text-align: left;
 font-weight: 400;
 letter-spacing: 0;
 margin-top: 3px;
+}
+/* ============================== forma ============================== */
+
+.input-wraper {
+  width: 100%;
+
+}
+
+#order-form {
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-color: #e3d499;
+  padding: 20px;
+}
+
+#order-form label {
+text-align: left;
+margin-top: 10px;
+}
+
+#order-form h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+  }
+
+
+.inline {
+  display: inline-block;
+}
+#order-form input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 5px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+#order-form input:hover {
+  border: 1px solid #000;
+}
+
+#order-form .error-msg {
+  height: 12px;
+  font-size: 10px;
+  color: red;
+}
+
+/* #order-form .close-btn {
+  color: #ab8d3f;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 2rem;
+  margin: -20px -10px 0 0;
+}
+#order-form .close-btn:hover {
+  color: #705b25;
+} */
+
+#order-game-btn {
+  max-width: 150px;
+  align-self: center;
+  margin-top: 10px;
 }

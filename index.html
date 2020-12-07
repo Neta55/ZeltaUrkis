@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Zelta Urķis</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="css/img/logo/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="css/img/logo/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="css/img/logo/favicon/favicon-16x16.png">
-  <link rel="manifest" href="css/img/logo/favicon/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="apple-touch-icon" sizes="180x180" href="/ZeltaUrkis/css/img/logo/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ZeltaUrkis/css/img/logo/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ZeltaUrkis/css/img/logo/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/ZeltaUrkis/css/img/logo/favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
@@ -105,8 +104,10 @@
       <div class="bilde">
         <div class="kartis"><img class="w250" src="/ZeltaUrkis/css/img/logo/3.jpg"></div>
       </div>
-      <div class="poga"><button onclick="openForm()">rezervēt</button></div>
-      <div class="apraksts">Zelta Urķis - sociāla jautājumu spēle, ko var spēlēt gan ģimenes, gan draugu lokā. Nebaidies
+      <div class="poga">
+        <a href="/ZeltaUrkis/components/order-form-lv.html" type="button" class="button">REZERVĒT</a>
+      </div>
+      <div class="apraksts">Zelta Urķis – sociāla jautājumu spēle, ko var spēlēt gan ģimenes, gan draugu lokā. Nebaidies
         jautāt to, kas pašam interesē, un esi gatavs uzzināt, ko citi tiešām domā par tevi. Šī ir tava iespēja beidzot
         būt patiesi atklātam un IZURĶĒT citu noslēpumus!</div>
     </div>
@@ -176,7 +177,7 @@
 
         </iframe>
       </div>
-      <a href="/ZeltaUrkis/components/ch-sheet.html" type="button" class="spikeris-btn">ŠPIKERIS</a>
+      <a href="/ZeltaUrkis/components/ch-sheet-lv.html" type="button" class="spikeris-btn">ŠPIKERIS</a>
 
     </div>
     <!-- nosaukums + pasūtīšanas poga -->
@@ -185,7 +186,8 @@
     <div class="buy">
       <h2>Zelta Urķis</h2>
       <p>Iespēja būt atklātam</p>
-      <button onclick="openForm()">REZERVĒT TŪLĪT</button>
+      <a href="/ZeltaUrkis/components/order-form-lv.html" type="button" class="button">REZERVĒT TŪLĪT</a>
+      <!-- <button onclick="openForm()">REZERVĒT TŪLĪT</button> -->
     </div>
     <!-- fūteris ar kontaktiem -->
     <div class="footerl"></div>
@@ -202,7 +204,7 @@
 
   </div>
 
-  <!-- FORMAS VIETA -->
+  <!-- FORMAS VIETA
   <div id="cover" class="hidden">
     <div id="pop-up" class="hidden">
       <form method="POST" id="order-form" class="hidden" action="mailto:ineta.priga@gmail.com"
@@ -233,7 +235,7 @@
   </div>
   <div class="ch-sheet">
 
-  </div>
+  </div> -->
   <script src="/ZeltaUrkis/js/main.js"></script>
   <script src="/ZeltaUrkis/js/form-lv.js"></script>
 </body>
