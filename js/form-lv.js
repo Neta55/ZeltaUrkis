@@ -1,21 +1,17 @@
 "use strict";
 
 window.addEventListener('load', function () {
-
+  const form = document.getElementById('order-form').elements;
   document.getElementById('order-game-btn').addEventListener('click', function () {
-    const form = document.getElementById('order-form').elements;
+
 
     if (isFormValid(form)) {
-      form.submit();
-      const mailSend = document.getElementById('mailsend');
-      mailSend.innerHTML = "Tavs pieprasījums ir veiksmīgi aizsūtīts. Mēs ar tevi sazināsimies tuvākajā laikā!";
-      form.reset();
-
-
+      const orderForm = document.getElementById('order-form');
+      orderForm.submit();
+      orderForm.reset();
+      console.log('Pieprasījums aizsūtīts');
     } else {
-      console.log('nepareizi ievadīti dati');
-      const mailSend = document.getElementById('mailsend');
-      mailSend.innerHTML = "Ups! Kaut kas nav tā ar tiem sakariem. Lai pasūtītu Urķi, piezvani pa tālr. 26 008 102!";
+      console.log('Nepareizi ievadīti dati');
 
     }
   })

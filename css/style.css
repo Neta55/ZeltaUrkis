@@ -290,7 +290,7 @@ grid-template-areas:
   border-radius: 40px;
   transition:  0.3s;
 }
-.poga .button:hover {
+.poga:hover .button:hover {
   padding: 20px 25px;
   color: #e3d499;
   background-color: #705b25;
@@ -558,28 +558,7 @@ padding: 50px;
   width: 30px;
   margin: 0 5px;
 }
-/* ========================== popup logam, nav izmantots ================================== */
-#cover {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 6;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-}
-#pop-up {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 300px;
-  height: auto;
-width: auto;
-}
-.hidden {
-  display: none;
-}
+
 
 /* ============================ response ================================ */
 
@@ -934,9 +913,70 @@ margin-top: 10px;
 #order-form .close-btn:hover {
   color: #705b25;
 } */
+#order-form .button {
+  color: #ffffff;
+  padding: 12px;
+  background-color: #ab8d3f;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  transition:  0.3s;
+}
+#order-form .button:hover {
+  color: #e3d499;
+  background-color: #705b25;
+  border: none;
+} 
 
 #order-game-btn {
-  max-width: 150px;
+  max-width: 120px;
   align-self: center;
   margin-top: 10px;
 }
+
+
+/* ========================== popup logam, nav izmantots ================================== */
+#cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  background:#000;
+}
+#pop-up {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  height: auto;
+width: auto;
+background-color: #e3d499;
+padding: 20;
+}
+#pop-up h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.hidden {
+  display: none;
+}
+
+#pop-up .button {
+  align-self: center;
+  } 
+
+#pop-up a {
+color: #ffffff;
+}
+
+#pop-up a:hover {
+  color: #e3d499;
+  }
