@@ -48,6 +48,18 @@ window.addEventListener('load', function () {
       isFormValid = false;
     }
 
+    const response = grecaptcha.getResponse();
+    if (response.length == 0) {
+
+      const errorMsg = document.getElementsByClassName('error-msg g-recaptcha')[0];
+      errorMsg.innerHTML = "Lai turpinātu, ieklikšķini, ka neesi robots!"
+      isFormValid = false;
+    }
+
+
+
+
+
     return isFormValid;
 
 
