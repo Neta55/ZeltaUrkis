@@ -611,10 +611,13 @@ header {
   }
 
   .galery {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    grid-template-areas: "galery1 galery2" "galery3 galery4" "galery5 galery6";
-    padding: 30px;
+    grid-template-areas: 
+    "galery1 galery2" 
+    "galery3 galery4" 
+    "galery5 galery6";
+    padding: 60px 10px;
   }
 
 }
@@ -657,7 +660,7 @@ header {
     grid-template-columns: 100%;
     gap: 20px;
     grid-template-areas: "galery1" "galery2" "galery3" "galery4" "galery5" "galery6";
-    padding: 30px;
+    padding: 60px 30px;
   }
   .features {
     padding: 30px 20%;
@@ -726,7 +729,7 @@ header {
     grid-template-columns: 100%;
     gap: 20px;
     grid-template-areas: "galery1" "galery2" "galery3" "galery4" "galery5" "galery6";
-    padding: 20px;
+    padding: 50px 20px;
   }
   .features {
     padding: 20px 10%;
