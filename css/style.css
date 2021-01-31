@@ -1,44 +1,51 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0;
   text-align: center;
   letter-spacing: 1px;
 }
 
-
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   -o-appearance: none !important;
   appearance: none !important;
 }
 
-
-button, a, button:hover, a:hover, a:visited, button:active {
+button,
+a,
+button:hover,
+a:hover,
+a:visited,
+button:active {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   -o-appearance: none !important;
   appearance: none !important;
   cursor: pointer;
   box-shadow: none;
-  border:none;
+  border: none;
   outline: none;
   background-color: none;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
 }
 
-button, .button {
+button,
+.button {
   color: #ffffff;
   padding: 15px 20px;
   background-color: #ab8d3f;
@@ -46,14 +53,16 @@ button, .button {
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 30px;
-  transition:  0.3s;
+  transition: 0.3s;
 }
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   padding: 15px 20px;
   color: #e3d499;
   background-color: #705b25;
 }
-button:active, .button:active {
+button:active,
+.button:active {
   transform: scale(0.9);
 }
 /* ============================ GALVENAIS WRAPERIS =============================== */
@@ -63,18 +72,17 @@ button:active, .button:active {
   margin: 0;
   padding: 0;
   grid-auto-rows: minmax(10px, auto);
-  grid-template-areas: 
-  'headerl header headerr'
-  'herol hero heror'
-  'cheatl cheat cheatr'
-  'descrl descr descrr'
-  'featuresl features featuresr'
-  'storiesl stories storiesr'
-  'galeryl galery galeryr'
-  'videol video videor'
-  'buyl buy buyr'
-  'footerl footer footerr';
-
+  grid-template-areas:
+    "headerl header headerr"
+    "herol hero heror"
+    "cheatl cheat cheatr"
+    "descrl descr descrr"
+    "featuresl features featuresr"
+    "storiesl stories storiesr"
+    "galeryl galery galeryr"
+    "videol video videor"
+    "buyl buy buyr"
+    "footerl footer footerr";
 }
 
 /* ============================ galvene ar logo un valodām =============================== */
@@ -85,23 +93,21 @@ header {
   display: grid;
   height: auto;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-areas: 
-  '. logo language'
-  'slogan slogan slogan';
+  grid-template-areas:
+    ". logo language"
+    "slogan slogan slogan";
   color: #e3d499;
   background-color: #000;
-
 }
 
 .headerl {
   grid-area: headerl;
-  background-color: #000; 
+  background-color: #000;
 }
 .headerr {
   grid-area: headerr;
-  background-color: #000; 
+  background-color: #000;
 }
-
 
 .logo {
   grid-area: logo;
@@ -117,22 +123,21 @@ header {
   padding: 0;
   margin-top: 0;
   word-wrap: none;
-
 }
 
 .language {
   grid-area: language;
   display: flex;
- 
 }
 
-
-.language>a, .language>a:active, .language>a:visited {
+.language > a,
+.language > a:active,
+.language > a:visited {
   padding: 10px;
   color: #e3d499;
   text-decoration: none;
 }
-.language>a:active {
+.language > a:active {
   font-weight: 800;
 }
 /* ============================ hero - gifu sadaļa  ================================ */
@@ -177,25 +182,24 @@ header {
   color: #705b25;
 }
 
-
 .display-left {
   position: absolute;
   display: inline-block;
   top: 50%;
   left: -55px;
-  transform: translate(0%,-50%);
-  -ms-transform: translate(-0%,-50%);
+  transform: translate(0%, -50%);
+  -ms-transform: translate(-0%, -50%);
 }
 .display-right {
   position: absolute;
   display: inline-block;
   top: 50%;
   right: -55px;
-  transform: translate(0%,-50%);
-  -ms-transform: translate(0%,-50%);
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
 }
 .heroSlides {
-  display:none;
+  display: none;
 }
 
 .image-cont {
@@ -215,7 +219,9 @@ header {
   background-color: #ab8d3f;
   padding: 2px;
 }
-.cheat a, .cheat a:hover, .cheat a:visited {
+.cheat a,
+.cheat a:hover,
+.cheat a:visited {
   color: #000;
   text-decoration: none;
   font-weight: 700;
@@ -236,11 +242,10 @@ header {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
-grid-template-areas:  
-  "cena cena"
-  "bilde poga"
-  "apraksts apraksts"
-  ;
+  grid-template-areas:
+    "cena cena"
+    "bilde poga"
+    "apraksts apraksts";
 }
 .descrl {
   grid-area: descrl;
@@ -252,13 +257,12 @@ grid-template-areas:
 }
 .cena {
   grid-area: cena;
-  margin-bottom:  10px;
+  margin-bottom: 10px;
   font-size: 2.5rem;
   text-align: center;
   font-weight: 500;
   padding: 2px;
   vertical-align: middle;
-
 }
 
 .cena span {
@@ -268,16 +272,16 @@ grid-template-areas:
 }
 .bilde {
   grid-area: bilde;
-  display:  flex;
-  margin: 0 5px 0 auto
+  display: flex;
+  margin: 0 5px 0 auto;
 }
 .kartis {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .poga {
   grid-area: poga;
-  display:  flex;
+  display: flex;
   align-items: center;
 }
 .poga .button {
@@ -288,7 +292,7 @@ grid-template-areas:
   font-size: 2rem;
   font-weight: 500;
   border-radius: 40px;
-  transition:  0.3s;
+  transition: 0.3s;
 }
 .poga:hover .button:hover {
   padding: 20px 25px;
@@ -319,8 +323,7 @@ grid-template-areas:
   padding: 30px 0 10px;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  grid-template-areas:
-  "trapigi atklati vienkarsi"
+  grid-template-areas: "trapigi atklati vienkarsi";
 }
 
 .features p {
@@ -333,17 +336,16 @@ grid-template-areas:
   gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 
-  "story-title story-title"
-  "story-1-img story-1-txt"
-  "story-2-txt story-2-img"
-  "story-3-img story-3-txt";
+  grid-template-areas:
+    "story-title story-title"
+    "story-1-img story-1-txt"
+    "story-2-txt story-2-img"
+    "story-3-img story-3-txt";
   align-items: center;
-  padding-bottom: 40px;
-  
+  padding-bottom: 60px;
 }
 
-.story-title{
+.story-title {
   grid-area: story-title;
 }
 .story-title h1 {
@@ -359,7 +361,6 @@ grid-template-areas:
   font-size: 2rem;
   text-align: left;
   margin: 10px 0 10px;
-
 }
 .stories p {
   font-weight: 400;
@@ -386,17 +387,17 @@ grid-template-areas:
 }
 .story-2-img {
   grid-area: story-2-img;
-  background: url("/ZeltaUrkis/css/img/stasti/patriks_davana.jpg") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/stasti/patriks_davana.jpg") no-repeat
+    center;
   background-size: cover;
   min-height: 300px;
-
 }
 .story-3-img {
   grid-area: story-3-img;
-  background: url("/ZeltaUrkis/css/img/stasti/Kristine_katls.jpg") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/stasti/Kristine_katls.jpg") no-repeat
+    center;
   background-size: cover;
   min-height: 300px;
-  
 }
 /* =========================== galerija melnā ================================= */
 .galeryl {
@@ -412,12 +413,11 @@ grid-template-areas:
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-  "galery1 galery2 galery3";
+  grid-template-areas:
+    "galery1 galery2 galery3"
+    "galery4 galery5 galery6";
   background-color: #000;
-padding: 50px;
-
-
+  padding: 70px 0;
 }
 
 .galery1 {
@@ -438,23 +438,41 @@ padding: 50px;
   background-size: cover;
   min-height: 200px;
 }
+.galery4 {
+  grid-area: galery4;
+  background: url("/ZeltaUrkis/css/img/galery/4.JPG") no-repeat center;
+  background-size: cover;
+  min-height: 200px;
+}
+.galery5 {
+  grid-area: galery5;
+  background: url("/ZeltaUrkis/css/img/galery/5.JPG") no-repeat center;
+  background-size: cover;
+  min-height: 200px;
+}
+.galery6 {
+  grid-area: galery6;
+  background: url("/ZeltaUrkis/css/img/galery/6.JPG") no-repeat center;
+  background-size: cover;
+  min-height: 200px;
+}
 /* =========================== video un špikera poga ================================= */
 .video {
   grid-area: video;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 60px 0 20px;
   align-items: center;
-
-
+  
 }
 .videowrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  border: 5px double #ab8d3f;
+  outline: none !important;
   
+  /* border: 5px double #ab8d3f; */
 }
 .responsive-iframe {
   position: absolute;
@@ -476,13 +494,13 @@ padding: 50px;
   border-radius: 30px;
   background-color: #000;
   color: #e3d499;
-  transition:  0.3s;
+  transition: 0.3s;
 }
 .spikeris-btn:hover {
   margin: 20px auto;
   width: 200px;
   padding: 15px 20px;
-  color: #ffffff; 
+  color: #ffffff;
   background-color: #000;
   font-weight: 700;
 }
@@ -511,7 +529,6 @@ padding: 50px;
   margin-bottom: 0;
 }
 .buy p {
-
   margin: 0 0 30px;
 }
 /* =========================== fūteris ================================= */
@@ -559,17 +576,15 @@ padding: 50px;
   margin: 0 5px;
 }
 
-
 /* ============================ response ================================ */
 
-@media only screen and (min-device-width:1025px)  {  
+@media only screen and (min-device-width: 1025px) {
   .wrapper {
     grid-template-columns: 1fr 1000px 1fr;
   }
-
 }
 
-@media only screen and (min-device-width:961px) and (max-device-width:1024px)   { 
+@media only screen and (min-device-width: 961px) and (max-device-width: 1024px) {
   .wrapper {
     grid-template-columns: 1fr 960px 1fr;
   }
@@ -577,10 +592,9 @@ padding: 50px;
     padding-left: 10%;
     padding-right: 10%;
   }
-
 }
 
-@media only screen and (min-device-width:641px) and (max-device-width:960px) { 
+@media only screen and (min-device-width: 641px) and (max-device-width: 960px) {
   .wrapper {
     grid-template-columns: 3vw 94vw 3vw;
   }
@@ -596,11 +610,16 @@ padding: 50px;
     right: 0px;
   }
 
+  .galery {
+    grid-template-columns: 100%;
+    gap: 20px;
+    grid-template-areas: "galery1 galery2" "galery3 galery4" "galery5 galery6";
+    padding: 30px;
+  }
+
 }
 
-
-@media only screen  and (min-device-width:321px) and (max-device-width:640px)  {  
-
+@media only screen and (min-device-width: 321px) and (max-device-width: 640px) {
   .wrapper {
     grid-template-columns: 3vw 94vw 3vw;
   }
@@ -621,56 +640,55 @@ padding: 50px;
     gap: 10px;
     grid-template-columns: 100%;
     justify-items: center;
-  grid-template-areas:  
-    "cena"
-    "bilde"
-    "poga"
-    "apraksts"
-    ;
+    grid-template-areas:
+      "cena"
+      "bilde"
+      "poga"
+      "apraksts";
   }
 
   .bilde {
     grid-area: bilde;
-    display:  flex;
-    margin: 0 auto
+    display: flex;
+    margin: 0 auto;
   }
 
   .galery {
     grid-template-columns: 100%;
     gap: 20px;
-    grid-template-areas: 
-    "galery1" "galery2" "galery3";
-  padding: 30px;
+    grid-template-areas: "galery1" "galery2" "galery3" "galery4" "galery5" "galery6";
+    padding: 30px;
   }
   .features {
     padding: 30px 20%;
     grid-template-columns: 100%;
     gap: 20px;
     grid-template-areas:
-    "trapigi"
-    "atklati"
-    "vienkarsi"
+      "trapigi"
+      "atklati"
+      "vienkarsi";
   }
 
   .stories {
     padding: 30px;
     gap: 20px;
     grid-template-columns: 100%;
-    grid-template-rows: auto minmax(300px, auto) auto minmax(300px, auto) auto minmax(300px, auto) auto ;
-    grid-template-areas: 
-    "story-title"
-    "story-1-img"
-    "story-1-txt"
-    "story-2-img"
-    "story-2-txt"
-    "story-3-img"
-    "story-3-txt";
+    grid-template-rows:
+      auto minmax(300px, auto) auto minmax(300px, auto) auto minmax(300px, auto)
+      auto;
+    grid-template-areas:
+      "story-title"
+      "story-1-img"
+      "story-1-txt"
+      "story-2-img"
+      "story-2-txt"
+      "story-3-img"
+      "story-3-txt";
     padding-bottom: 40px;
   }
-} 
+}
 
-@media only screen  and (max-device-width:320px)  {  
-
+@media only screen and (max-device-width: 320px) {
   .wrapper {
     grid-template-columns: 3vw 94vw 3vw;
   }
@@ -691,53 +709,55 @@ padding: 50px;
     gap: 10px;
     grid-template-columns: 100%;
     justify-items: center;
-  grid-template-areas:  
-    "cena"
-    "bilde"
-    "poga"
-    "apraksts"
-    ;
+    grid-template-areas:
+      "cena"
+      "bilde"
+      "poga"
+      "apraksts";
   }
 
   .bilde {
     grid-area: bilde;
-    display:  flex;
-    margin: 0 auto
+    display: flex;
+    margin: 0 auto;
   }
 
   .galery {
     grid-template-columns: 100%;
     gap: 20px;
-    grid-template-areas: 
-    "galery1" "galery2" "galery3";
-  padding: 20px;
+    grid-template-areas: "galery1" "galery2" "galery3" "galery4" "galery5" "galery6";
+    padding: 20px;
   }
   .features {
     padding: 20px 10%;
     grid-template-columns: 100%;
     gap: 20px;
     grid-template-areas:
-    "trapigi"
-    "atklati"
-    "vienkarsi"
+      "trapigi"
+      "atklati"
+      "vienkarsi";
   }
   .stories {
     padding: 20px;
     gap: 20px;
     grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto auto auto auto ;
-    grid-template-areas: 
-    "story-title"
-    "story-1-img"
-    "story-1-txt"
-    "story-2-img"
-    "story-2-txt"
-    "story-3-img"
-    "story-3-txt";
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "story-title"
+      "story-1-img"
+      "story-1-txt"
+      "story-2-img"
+      "story-2-txt"
+      "story-3-img"
+      "story-3-txt";
     padding-bottom: 40px;
   }
-  .story-1-img, .story-2-img, .story-3-img {min-height: 150px;}
-  
+  .story-1-img,
+  .story-2-img,
+  .story-3-img {
+    min-height: 150px;
+  }
+
   .language {
     flex-direction: column;
   }
@@ -748,9 +768,9 @@ padding: 50px;
     height: 150px;
   }
   .w250 {
-  display: none;
+    display: none;
   }
-} 
+}
 
 .w250 {
   width: 250px;
@@ -758,19 +778,18 @@ padding: 50px;
 
 /* ============================ špikeris un forma kopējais ================================ */
 
-
 #back-btn {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  top:5px;
+  top: 5px;
   margin: 0 auto;
   padding: 5px;
   background-color: #000;
   border: #e3d499 solid 1px;
   color: #e3d499;
   z-index: 10;
-  }
+}
 
 #ch-sheet h1 {
   margin-top: 50px;
@@ -789,7 +808,6 @@ padding: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 /* =============================== apgriežamās kārtis ============================= */
 
@@ -833,9 +851,9 @@ padding: 50px;
 }
 
 .card ul {
-padding-left: 25px;
-padding-right: 3px;
-align-self: center;
+  padding-left: 25px;
+  padding-right: 3px;
+  align-self: center;
 }
 
 .card ul:first-child {
@@ -843,16 +861,15 @@ align-self: center;
 }
 
 .card li {
-text-align: left;
-font-weight: 400;
-letter-spacing: 0;
-margin-top: 3px;
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 3px;
 }
 /* ============================== forma ============================== */
 
 .input-wraper {
   width: 100%;
-
 }
 
 #order-form {
@@ -866,16 +883,15 @@ margin-top: 3px;
 }
 
 #order-form label {
-text-align: left;
-margin-top: 10px;
+  text-align: left;
+  margin-top: 10px;
 }
 
 #order-form h2 {
   font-weight: 400;
   font-size: 2rem;
   margin: 0;
-  }
-
+}
 
 .inline {
   display: inline-block;
@@ -889,8 +905,7 @@ margin-top: 10px;
   outline: none;
   border: none;
   font-size: 1.2rem;
-  font-family: 'Source Sans Pro', sans-serif;
-
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #order-form input:hover {
@@ -922,20 +937,19 @@ margin-top: 10px;
   font-weight: 500;
   border-radius: 30px;
   cursor: pointer;
-  transition:  0.3s;
+  transition: 0.3s;
 }
 #order-form .button:hover {
   color: #e3d499;
   background-color: #705b25;
   border: none;
-} 
+}
 
 #order-game-btn {
   max-width: 120px;
   align-self: center;
   margin-top: 10px;
 }
-
 
 /* ========================== popup logam, nav izmantots ================================== */
 #cover {
@@ -945,7 +959,7 @@ margin-top: 10px;
   z-index: 6;
   width: 100%;
   height: 100%;
-  background:#000;
+  background: #000;
 }
 #pop-up {
   position: fixed;
@@ -957,9 +971,9 @@ margin-top: 10px;
   transform: translate(-50%, -50%);
   min-width: 300px;
   height: auto;
-width: auto;
-background-color: #e3d499;
-padding: 20;
+  width: auto;
+  background-color: #e3d499;
+  padding: 20;
 }
 #pop-up h3 {
   font-size: 1.5rem;
@@ -971,12 +985,12 @@ padding: 20;
 
 #pop-up .button {
   align-self: center;
-  } 
+}
 
 #pop-up a {
-color: #ffffff;
+  color: #ffffff;
 }
 
 #pop-up a:hover {
   color: #e3d499;
-  }
+}
