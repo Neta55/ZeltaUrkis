@@ -422,13 +422,13 @@ header {
 
 .galery1 {
   grid-area: galery1;
-  background: url("/ZeltaUrkis/css/img/galery/1.JPG") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/1.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery2 {
   grid-area: galery2;
-  background: url("/ZeltaUrkis/css/img/galery/2.JPG") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/2.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
@@ -440,19 +440,19 @@ header {
 }
 .galery4 {
   grid-area: galery4;
-  background: url("/ZeltaUrkis/css/img/galery/4.JPG") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/4.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery5 {
   grid-area: galery5;
-  background: url("/ZeltaUrkis/css/img/galery/5.JPG") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/5.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery6 {
   grid-area: galery6;
-  background: url("/ZeltaUrkis/css/img/galery/6.JPG") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/6.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
