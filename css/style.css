@@ -422,13 +422,13 @@ header {
 
 .galery1 {
   grid-area: galery1;
-  background: url("/ZeltaUrkis/css/img/galery/1.jpg") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/1.JPG") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery2 {
   grid-area: galery2;
-  background: url("/ZeltaUrkis/css/img/galery/2.jpg") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/galery/2.JPG") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
