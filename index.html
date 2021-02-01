@@ -177,12 +177,20 @@
     <div class="videol"></div>
     <div class="videor"></div>
     <div class="video">
-      <div class="videowrapper">
-        <iframe widht="105%" style="margin: -5px" class="responsive-iframe"
-          src="https://www.youtube.com/embed/_Styw422oEM">
 
+      <div class="videowrapper">
+        <div id="aplis">
+          <img class="responsive-iframe" src="/ZeltaUrkis/css/img/video/aplis.jpg" style="display: block">
+          <div class="playbtn" onclick="playVideo()" style="cursor: pointer;"></div>
+        </div>
+        <iframe id="zu-video" class="responsive-iframe" style="border:0; display: none;"
+          src="https://www.youtube.com/embed/_Styw422oEM?rel=0&?autoplay=1?enablejsapi=1" frameborder="0"
+          allow="autoplay 'src'">
         </iframe>
+
       </div>
+
+
       <a href="/ZeltaUrkis/components/ch-sheet-lv.html" type="button" class="spikeris-btn">ŠPIKERIS</a>
 
     </div>

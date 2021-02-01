@@ -1,4 +1,4 @@
-// window.addEventListener('load', function () {
+
 "use strict";
 
 
@@ -21,10 +21,23 @@ function showHeroSlides(n) {
 }
 
 
+function playVideo() {
+
+
+  let cards = document.getElementById('aplis');
+  let video = document.getElementById('zu-video');
+  cards.style.display = 'none';
+  video.style.display = 'block';
+  setTimeout(function () {
+    video.style.display = 'none';
+    cards.style.display = 'block';
+  }, 43000);
+}
 
 
 
-// })
+
+
 
 // Set a same-site cookie for first-party contexts
 document.cookie = 'cookie1=value1; SameSite=Lax';

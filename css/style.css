@@ -188,7 +188,7 @@ header {
   top: 50%;
   left: -55px;
   transform: translate(0%, -50%);
-  -ms-transform: translate(-0%, -50%);
+  -ms-transform: translate(0%, -50%);
 }
 .display-right {
   position: absolute;
@@ -414,7 +414,7 @@ header {
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-  "galeryhead galeryhead galeryhead"
+    "galeryhead galeryhead galeryhead"
     "galery1 galery2 galery3"
     "galery4 galery5 galery6";
   background-color: #000;
@@ -471,18 +471,19 @@ header {
   grid-area: video;
   display: flex;
   flex-direction: column;
-  padding: 60px 0 20px;
+  padding: 20px 0 20px;
   align-items: center;
-  
 }
 .videowrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  outline: none !important;
-  
+
   /* border: 5px double #ab8d3f; */
+}
+iframe {
+  border: none;
 }
 .responsive-iframe {
   position: absolute;
@@ -492,6 +493,26 @@ header {
   right: 0;
   width: 100%;
   height: 100%;
+  outline: none;
+  border: none;
+}
+.playbtn {
+  background:  url("/ZeltaUrkis/css/img/video/play-button.svg") no-repeat center;
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 60px;
+  z-index: 6;
+  align-self: center;
+  justify-self: center;
+  top: 50%;
+  transform: translate(-40px, -30px);
+  -ms-transform: translate(-40px, -30px);
+  opacity: 80%;
+}
+
+.playbtn:hover {
+  opacity: 100%;
 }
 
 .spikeris-btn {
@@ -512,7 +533,7 @@ header {
   padding: 15px 20px;
   color: #ffffff;
   background-color: #000;
-  font-weight: 700;
+  
 }
 .spikeris-btn:active {
   transform: scale(0.9);
@@ -623,14 +644,13 @@ header {
   .galery {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    grid-template-areas: 
-    "galeryhead galeryhead"
-    "galery1 galery2" 
-    "galery3 galery4" 
-    "galery5 galery6";
+    grid-template-areas:
+      "galeryhead galeryhead"
+      "galery1 galery2"
+      "galery3 galery4"
+      "galery5 galery6";
     padding: 60px 0;
   }
-
 }
 
 @media only screen and (min-device-width: 321px) and (max-device-width: 640px) {
