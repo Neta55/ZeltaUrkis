@@ -8,12 +8,14 @@ if (isset($_POST['name'])) {
   $phone = $_POST['phone'];
   $note = $_POST['note'];
 
-  $mailTo = 'ineta.priga@gmail.com';
+  $mailTo = 'zeltaurkis@gmail.com';
   $subject = 'Vēlos rezervēt Zelta Urķi';
   $headers = 'No ' . $name;
   $txt = 'Vārds: ' . $name . '\n\n E-pasts: ' . $email . '\n\n Tālrunis: ' . $phone . '\n\n Piezīmes: ' . $note;
   if (mail($mailTo, $subject, $txt, $note)) {
 ?>
+    <!DOCTYPE html>
+    <html lang="en">
 
     <head>
       <meta charset="utf-8">
@@ -27,6 +29,7 @@ if (isset($_POST['name'])) {
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     </head>
+
   <?php
     echo "<div id='cover'>";
     echo "<div id='pop-up'>";
@@ -34,8 +37,12 @@ if (isset($_POST['name'])) {
     echo "<div class='button'><a href='/ZeltaUrkis/index.html'>OK</a></div>";
     echo "</div>";
     echo "</div>";
+    echo "</body>";
+    echo "</html>";
   } else {
   ?>
+    <!DOCTYPE html>
+    <html lang="en">
 
     <head>
       <meta charset="utf-8">
@@ -49,22 +56,22 @@ if (isset($_POST['name'])) {
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     </head>
-<?php
+
+    <body>
+
+
+  <?php
     echo "<div id='cover'>";
     echo "<div id='pop-up'>";
-    echo "<h3>Ups!</br>Kaut kas nav tā ar tiem sakariem.</br>Mēģini pasūtīt Urķi, piezvanot</br>pa tālr. <strong>26 008 102</strong>!</h3>";
+    echo "<h3>Ups!</br>Kaut kas nav tā ar tiem sakariem.</br>Pasūti Urķi, uzrakstot mums</br>e-pastu <strong>zeltaurkis@gmail.com</strong>!</h3>";
 
     echo "<div class='button'><a href='/ZeltaUrkis/index.html'>ATGRIEZTIES SĀKUMLAPĀ</a></div>";
     echo "</br>";
     echo "<div class='button'><a href='/ZeltaUrkis/components/order-form-lv.html'>MĒĢINĀT VĒLREIZ</a></div>";
     echo "</div>";
     echo "</div>";
+    echo "</body>";
+    echo "</html>";
   }
 }
-// else {
-//   echo "Atzīmē, ka neesi robots, un mēģini vēlreiz";
-// }
-// }
-// else {
-// echo "Atzīmē, ka neesi robots ieliekot ķeksīti, un mēģini vēlreiz";
-// }
+  ?>

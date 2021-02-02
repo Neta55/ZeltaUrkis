@@ -418,7 +418,7 @@ header {
     "galery1 galery2 galery3"
     "galery4 galery5 galery6";
   background-color: #000;
-  padding: 50px 0 70px;
+  padding: 30px 0 70px;
 }
 
 .galeryhead {
@@ -497,17 +497,17 @@ iframe {
   border: none;
 }
 .playbtn {
-  background:  url("/ZeltaUrkis/css/img/video/play-button.svg") no-repeat center;
+  background: url("/ZeltaUrkis/css/img/video/play-button.svg") no-repeat center;
   position: absolute;
   display: inline-block;
-  width: 80px;
-  height: 60px;
+  width: 60px;
+  height: 45px;
   z-index: 6;
   align-self: center;
   justify-self: center;
   top: 50%;
-  transform: translate(-40px, -30px);
-  -ms-transform: translate(-40px, -30px);
+  transform: translate(-30px, -22px);
+  -ms-transform: translate(-30px, -22px);
   opacity: 80%;
 }
 
@@ -533,7 +533,6 @@ iframe {
   padding: 15px 20px;
   color: #ffffff;
   background-color: #000;
-  
 }
 .spikeris-btn:active {
   transform: scale(0.9);
