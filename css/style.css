@@ -815,11 +815,12 @@ iframe {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  top: 5px;
+  top: 10px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 2px 7px;
   background-color: #000;
   border: #e3d499 solid 1px;
+  border-radius: 15px;
   color: #e3d499;
   z-index: 10;
 }
