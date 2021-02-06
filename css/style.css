@@ -380,21 +380,21 @@ header {
 
 .story-1-img {
   grid-area: story-1-img;
-  background: url("/ZeltaUrkis/css/img/stasti/alise_nazis.jpg") no-repeat center;
+  background: url("img/stasti/alise_nazis.jpg") no-repeat center;
   background-size: cover;
   min-height: 300px;
   width: 100%;
 }
 .story-2-img {
   grid-area: story-2-img;
-  background: url("/ZeltaUrkis/css/img/stasti/patriks_davana.jpg") no-repeat
+  background: url("img/stasti/patriks_davana.jpg") no-repeat
     center;
   background-size: cover;
   min-height: 300px;
 }
 .story-3-img {
   grid-area: story-3-img;
-  background: url("/ZeltaUrkis/css/img/stasti/Kristine_katls.jpg") no-repeat
+  background: url("img/stasti/Kristine_katls.jpg") no-repeat
     center;
   background-size: cover;
   min-height: 300px;
@@ -432,37 +432,37 @@ header {
 
 .galery1 {
   grid-area: galery1;
-  background: url("/ZeltaUrkis/css/img/galery/1.JPG") no-repeat center;
+  background: url("img/galery/1.JPG") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery2 {
   grid-area: galery2;
-  background: url("/ZeltaUrkis/css/img/galery/2.JPG") no-repeat center;
+  background: url("img/galery/2.JPG") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery3 {
   grid-area: galery3;
-  background: url("/ZeltaUrkis/css/img/galery/3.jpg") no-repeat center;
+  background: url("img/galery/3.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery4 {
   grid-area: galery4;
-  background: url("/ZeltaUrkis/css/img/galery/4.jpg") no-repeat center;
+  background: url("img/galery/4.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery5 {
   grid-area: galery5;
-  background: url("/ZeltaUrkis/css/img/galery/5.jpg") no-repeat center;
+  background: url("img/galery/5.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
 .galery6 {
   grid-area: galery6;
-  background: url("/ZeltaUrkis/css/img/galery/6.jpg") no-repeat center;
+  background: url("img/galery/6.jpg") no-repeat center;
   background-size: cover;
   min-height: 200px;
 }
@@ -497,7 +497,7 @@ iframe {
   border: none;
 }
 .playbtn {
-  background: url("/ZeltaUrkis/css/img/video/play-button.svg") no-repeat center;
+  background: url("img/video/play-button.svg") no-repeat center;
   position: absolute;
   display: inline-block;
   width: 60px;
@@ -581,26 +581,26 @@ iframe {
   font-size: 1.5rem;
 }
 .fb-icon {
-  background: url("/ZeltaUrkis/css/img/ikonas/facebk.svg") no-repeat center;
+  background: url("img/ikonas/facebk.svg") no-repeat center;
   height: 30px;
   width: 30px;
   margin: 0 5px;
 }
 .fb-icon:hover {
-  background: url("/ZeltaUrkis/css/img/ikonas/facebk-h.svg") no-repeat center;
+  background: url("img/ikonas/facebk-h.svg") no-repeat center;
   height: 30px;
   width: 30px;
   margin: 0 5px;
 }
 
 .inst-icon {
-  background: url("/ZeltaUrkis/css/img/ikonas/instgr.svg") no-repeat center;
+  background: url("img/ikonas/instgr.svg") no-repeat center;
   height: 30px;
   width: 30px;
   margin: 0 5px;
 }
 .inst-icon:hover {
-  background: url("/ZeltaUrkis/css/img/ikonas/instgr-h.svg") no-repeat center;
+  background: url("img/ikonas/instgr-h.svg") no-repeat center;
   height: 30px;
   width: 30px;
   margin: 0 5px;
@@ -796,7 +796,7 @@ iframe {
   }
   .kartis {
     margin-top: -30px;
-    background: center / contain no-repeat url("/ZeltaUrkis/css/img/logo/3.jpg");
+    background: center / contain no-repeat url("img/logo/3.jpg");
     width: 200px;
     height: 150px;
   }
@@ -879,7 +879,7 @@ iframe {
 }
 
 .card__face--back {
-  background: url("/ZeltaUrkis/css/img/cards/card-26.svg") no-repeat;
+  background: url("img/cards/card-26.svg") no-repeat;
   transform: rotateY(180deg);
 }
 
