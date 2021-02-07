@@ -8,11 +8,12 @@ if (isset($_POST['name'])) {
   $phone = $_POST['phone'];
   $note = $_POST['note'];
 
-  $mailTo = 'zeltaurkis@gmail.com';
+  $to = 'zeltaurkis@gmail.com';
   $subject = 'Vēlos rezervēt Zelta Urķi';
   $headers = 'No ' . $name;
   $txt = 'Vārds: ' . $name . '\n\n E-pasts: ' . $email . '\n\n Tālrunis: ' . $phone . '\n\n Piezīmes: ' . $note;
-  if (mail($mailTo, $subject, $txt, $note)) {
+  mail($to, $subject, $txt, $note);
+  if (mail($to, $subject, $txt, $note)) {
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -36,7 +37,7 @@ if (isset($_POST['name'])) {
     echo "<h3><strong>" . $name . "</strong>, tavs pieprasījums ir veiksmīgi aizsūtīts.</br>Mēs ar tevi sazināsimies tuvākajā laikā!</h3>";
     echo "<div class='button'><a href='../index.html'>OK</a></div>";
     echo "</div>";
-    echo "</div>";
+    echo "</div></br>";
     echo "</body>";
     echo "</html>";
   } else {
@@ -67,7 +68,7 @@ if (isset($_POST['name'])) {
 
     echo "<div class='button'><a href='../index.html'>ATGRIEZTIES SĀKUMLAPĀ</a></div>";
     echo "</br>";
-    echo "<div class='button'><a href='../components/order-form-lv.html'>MĒĢINĀT VĒLREIZ</a></div>";
+    echo "<div class='button'><a href='../components/order-form-lv.html'>MĒĢINĀT VĒLREIZ</a></div> </br>";
     echo "</div>";
     echo "</div>";
     echo "</body>";
