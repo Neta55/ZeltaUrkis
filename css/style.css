@@ -1005,9 +1005,8 @@ iframe {
   transform: translate(-50%, -50%);
   min-width: 300px;
   height: auto;
-  width: auto;
   background-color: #e3d499;
-  padding: 20;
+  padding: 20px;
 }
 #pop-up h3 {
   font-size: 1.5rem;

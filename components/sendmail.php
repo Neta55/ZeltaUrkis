@@ -1,6 +1,7 @@
 <?php
 
 
+
 if (isset($_POST['name'])) {
 
   $name = $_POST['name'];
@@ -8,12 +9,19 @@ if (isset($_POST['name'])) {
   $phone = $_POST['phone'];
   $note = $_POST['note'];
 
-  $to = 'zeltaurkis@gmail.com';
-  $subject = 'Vēlos rezervēt Zelta Urķi';
-  $headers = 'No ' . $name;
-  $txt = 'Vārds: ' . $name . '\n\n E-pasts: ' . $email . '\n\n Tālrunis: ' . $phone . '\n\n Piezīmes: ' . $note;
-  mail($to, $subject, $txt, $note);
-  if (mail($to, $subject, $txt, $note)) {
+  $to      = 'zelta.urkis@gmail.com';
+  $subject = 'Order game';
+  $message = 'Vārds: ' . $name . '\n E-pasts: ' . $email . '\n Tālrunis: ' . $phone . '\n Īpašas vēlmes: ' . $note;
+  $headers = array(
+    'From' => $email,
+    'Reply-To' => $email,
+    'X-Mailer' => 'PHP/' . phpversion()
+  );
+
+  // mail($to, $subject, $message, $headers);
+
+
+  if (mail($to, $subject, $message, $headers)) {
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -64,7 +72,7 @@ if (isset($_POST['name'])) {
   <?php
     echo "<div id='cover'>";
     echo "<div id='pop-up'>";
-    echo "<h3>Ups!</br>Kaut kas nav tā ar tiem sakariem.</br>Pasūti Urķi, uzrakstot mums</br>e-pastu <strong>zeltaurkis@gmail.com</strong>!</h3>";
+    echo "<h3>Ups!</br></br>Kaut kas nav tā ar tiem sakariem.</br></br> " . $name . ", pasūti Urķi, uzrakstot mums</br>e-pastu <strong>zelta.urkis@gmail.com</strong>!</h3>";
 
     echo "<div class='button'><a href='../index.html'>ATGRIEZTIES SĀKUMLAPĀ</a></div>";
     echo "</br>";
